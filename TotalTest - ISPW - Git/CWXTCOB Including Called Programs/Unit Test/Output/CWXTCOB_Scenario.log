@@ -1,0 +1,41 @@
+11:50:39.677 INFO      TOPAZ            ***************************************
+11:50:39.678 INFO      TOPAZ            ** Execution from Topaz with options **
+11:50:39.678 INFO      TOPAZ            ***************************************
+11:50:39.679 INFO      TOPAZ            Using repository: true
+11:50:39.679 INFO      TOPAZ            Repository URL: http://cwcc.compuware.com:2020/totaltestapi/
+11:50:39.679 INFO      TOPAZ            ***************************************
+11:50:39.679 INFO      Engine           Test Scenario execution started
+11:50:39.680 INFO      Engine           Using context settings:
+  Engine Version                : 20.4
+  Environment id                : 5b508b8a787be73b59238d38
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : CWCC.COMPUWARE.COM
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : HDAELG0
+  Use Repository Server         : false
+11:50:39.680 INFO      Engine           Setting variables from context and context data extensions
+11:50:39.680 INFO      Engine             id: environmentId      value: 5b508b8a787be73b59238d38
+11:50:39.681 INFO      Engine             id: environmentType    value: BATCH
+11:50:39.681 INFO      Engine             id: userId             value: HDAELG0
+11:50:39.681 INFO      Engine             id: accountingInfo     value: 
+11:50:39.681 INFO      Engine             id: unittest.loadlibraries  value: DataItem{name=unittest.loadlibraries, DataItem{name=Entry, getValue()=SALESSUP.ELG1.FIX.LOAD, StringDataItem{value=SALESSUP.ELG1.FIX.LOAD}}, DataItem{name=Entry, getValue()=SALESSUP.ELG1.EMR.LOAD, StringDataItem{value=SALESSUP.ELG1.EMR.LOAD}}, DataItem{name=Entry, getValue()=SALESSUP.ELG1.PRD.LOAD, StringDataItem{value=SALESSUP.ELG1.PRD.LOAD}}}
+11:50:39.682 INFO      Unittest         Interpreting Unittest of module: CWXTCOB testscenario path: CWXTCOB_Scenario.testscenario
+11:50:39.690 INFO      Unittest         Using local JCL skeleton to submit JCL
+11:50:41.980 INFO      CWCC Batch       Sending Job execution request to Host 
+11:50:47.011 INFO      CWCC Batch       Job execution completed with status:
+  Job status     : COMPLETED
+  Job status msg : Job HDAELG0T(J0939348) ended with return code: 0000
+  Job name       : HDAELG0T
+  Job id         : J0939348
+  Return code    : 0000
+  Abend code     : 
+  Abend reason   : 
+11:50:47.444 INFO      Unittest         Execution completed
+11:50:47.444 INFO      Engine           Test Scenario execution ended

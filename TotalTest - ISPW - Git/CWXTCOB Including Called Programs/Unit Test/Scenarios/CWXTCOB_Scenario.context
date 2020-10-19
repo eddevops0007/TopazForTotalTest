@@ -7,7 +7,7 @@
       <Value>SALESSUP.ELG1.PRD.LOAD</Value>
     </Parameter>
   </ExtensionData>
-  <XaUnit xmlns:data="http://www.xact.dk/xatester/data/v/1" componentNameUnderTest="cwxtcob" caseInsensitiveCompare="false" path="CWXTCOB_Scenario.testscenario">
+  <XaUnit xmlns:data="http://www.xact.dk/xatester/data/v/1" componentNameUnderTest="cwxtcob" caseInsensitiveCompare="false" path="CWXTCOB_Scenario.context">
     <Test>
       <Unittest testscenariopath="CWXTCOB_Scenario.testscenario" moduleName="CWXTCOB" />
     </Test>
