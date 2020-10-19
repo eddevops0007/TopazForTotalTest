@@ -1,0 +1,24 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<stub:stub xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" xmlns:stub="http://www.compuware.com/model/xml/stub" alias="" encoding="1047" id="CWXTCOB%20Including%20Called%20Programs/Stubs/CWXTCOB_DATETIME_01.stub" nextCalltoken="60002" stubtype="DATETIME" target="" token="60000">
+  <stub:description>Created: Oct 19, 2020 8:17:44 AM</stub:description>
+  <stub:stubdata callToken="60001" dateTimeType="1" id="0" name="ACCEPT DATE">
+    <stub:interface>../Interfaces/CWXTCOB_TODAYS_DATE.interface#CWXTCOB%20Including%20Called%20Programs/Interfaces/CWXTCOB_TODAYS_DATE.interface</stub:interface>
+    <stub:output listructure="../Structures/CWXTCOB_TODAYS-DATE.listructure#CWXTCOB%20Including%20Called%20Programs/Structures/CWXTCOB_TODAYS-DATE.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWXTCOB_TODAYS-DATE.listructure#TODAYS_DATE" id="arg0.TODAYS_DATE">
+        <properties:properties>
+          <properties:property name="value" type="string">F2F0F0F2F2F9</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:checkconditions/>
+    <stub:dateTimeServiceList>
+      <stub:dateTimeService>
+        <stub:serviceName>IGZXLOCT</stub:serviceName>
+        <stub:serviceArg>00027005</stub:serviceArg>
+        <stub:serviceArg>49336AEC21363D70</stub:serviceArg>
+        <stub:serviceArg>F2F0F2F0F0F2F2F9F0F3F0F1F3F9F3F9F0</stub:serviceArg>
+        <stub:serviceArg xsi:nil="true"/>
+      </stub:dateTimeService>
+    </stub:dateTimeServiceList>
+  </stub:stubdata>
+</stub:stub>
