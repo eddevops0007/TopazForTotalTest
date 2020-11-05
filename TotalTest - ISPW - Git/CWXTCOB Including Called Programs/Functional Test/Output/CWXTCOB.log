@@ -1,0 +1,61 @@
+12:56:13.820 INFO      TOPAZ            ***************************************
+12:56:13.820 INFO      TOPAZ            ** Execution from Topaz with options **
+12:56:13.821 INFO      TOPAZ            ***************************************
+12:56:13.821 INFO      TOPAZ            Using repository: true
+12:56:13.821 INFO      TOPAZ            Repository URL: http://cwcc.compuware.com:2020/totaltestapi/
+12:56:13.821 INFO      TOPAZ            ***************************************
+12:56:13.821 INFO      Engine           Test Scenario execution started
+12:56:13.822 INFO      Engine           Using context settings:
+  Engine Version                : 20.4
+  Environment id                : 5b508b8a787be73b59238d38
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : CWCC.COMPUWARE.COM
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : HDAELG0
+  Use Repository Server         : true
+12:56:13.822 INFO      Engine           Setting variables from context and context data extensions
+12:56:13.822 INFO      Engine             id: environmentId      value: 5b508b8a787be73b59238d38
+12:56:13.822 INFO      Engine             id: environmentType    value: BATCH
+12:56:13.823 INFO      Engine             id: userId             value: HDAELG0
+12:56:13.823 INFO      Engine             id: accountingInfo     value: 
+12:56:13.831 INFO      Component        Interpreting Component: CWXTCOB program:CWXTCOB
+12:56:13.843 INFO      CWCC Batch       Dataset from component repository definition will be deleted: 
+12:56:13.843 INFO      CWCC Batch        Dataset : HDAELG0.REPORT.FILE
+12:56:13.847 INFO      CWCC Batch       Sending Module execution request to Host for module:CWXTCOB rollback:false
+12:56:13.901 INFO      HCIClient        Creating job directory /u/xatester/hdaelg0/e4590c5f0c3747c8bb3b6e7e4e365402
+12:56:14.301 INFO      HCIClient        Job has been started at host with JobId:J0946466
+12:56:19.342 INFO      CWCC Batch       Job execution completed with status:
+  Job status     : COMPLETED
+  Job status msg : Job HDAELG0E(J0946466) ended with return code: 0000
+  Job name       : HDAELG0E
+  Job id         : J0946466
+  Return code    : 0000
+  Abend code     : 
+  Abend reason   : 
+12:56:19.365 INFO      CWCC Batch       Component completed with program exit: +0
+12:56:19.412 INFO      Component        Verifying program exit code: 0 against verify expression: value < 8
+12:56:19.702 INFO      Component        Program exit code was verified to be accepted by the expression: value < 8
+12:56:19.703 INFO      Component        Finished interpreting Component: CWXTCOB program:CWXTCOB
+12:56:19.703 INFO      VerifyRemoteFile Interpreting VerifyRemoteFile in COMPARE mode. Dataset to verify: HDAELG0.REPORT.FILE
+12:56:19.704 INFO      CWCC Batch       Sending Job execution request to Host 
+12:56:19.945 INFO      HCIClient        Creating job directory /u/xatester/hdaelg0/d75c20328e5742789653b92b75f28bc5
+12:56:20.054 INFO      HCIClient        Job has been started at host with JobId:J0946468
+12:56:25.091 INFO      CWCC Batch       Job execution completed with status:
+  Job status     : COMPLETED
+  Job status msg : Job HDAELG0S(J0946468) ended with return code: 0000
+  Job name       : HDAELG0S
+  Job id         : J0946468
+  Return code    : 0000
+  Abend code     : 
+  Abend reason   : 
+12:56:25.105 ERROR     VerifyRemoteFile Comparison of DSN expected:HDAELG0.REPORT.FILE.GOLD actual:HDAELG0.REPORT.FILE was FAIL
+12:56:25.131 ERROR     VerifyRemoteFile Expected and Actual files/datasets are NOT equal
+12:56:25.132 ERROR     VerifyRemoteFile Actual and expected datasets are not equal. Differences found in one or more records between actual dataset: HDAELG0.REPORT.FILE and expected dataset:HDAELG0.REPORT.FILE.GOLD
+12:56:25.132 INFO      Engine           Test Scenario execution ended
